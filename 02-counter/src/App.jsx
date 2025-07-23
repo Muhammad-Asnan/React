@@ -7,9 +7,10 @@ function App() {
   let [counter, setCounter] = useState(10);
   const increment = ()=>{
     if(counter<20){
-      setCounter(counter+1)
-      // setCounter(counter => counter<20 ? counter+1 : counter )
-      // setCounter(counter => counter<20 ? counter+1 : counter )
+      // setCounter(counter+1)
+
+      setCounter(counter => counter<20 ? counter+1 : counter )
+      setCounter(counter => counter<20 ? counter+1 : counter )
     }
     else
       alert("Value cannot be greater than 20")
